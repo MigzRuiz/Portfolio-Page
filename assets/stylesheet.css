@@ -1,0 +1,14 @@
+#about{
+  height: 450px;
+}
+
+#headline{
+  border: 2px solid;
+  border-color: white;
+  padding: 20px 20px;
+
+}
+
+* {
+  border-radius: 0 !important;
+}

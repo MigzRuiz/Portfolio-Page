@@ -7,33 +7,59 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="assets\stylesheet.css">
   </head>
   <body>
-    <!--MAIN NAV-->
-    <nav class="navbar navbar-toggleable-sm bg-warning navbar-inverse">
-      <div class="container">
-        <!--This is to make the #mainNav become a button-->
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar bg-inverse navbar-inverse ">
+      <div>
         <!--Brand-->
-        <a class="navbar-brand" href=#about>MR</a>
+          <a class="navbar-brand center-block" href=#about>MR</a>
           <!--
           Will replace MR with an image
           <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
           -->
+        <!--This is to make the #mainNav become a button-->
+        <button type="button" class="navbar-toggler navbar-right" data-toggle="collapse" data-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <!--#mainNav-->
-        <div class="collapse navbar-collapse" id="mainNav">
+        <div class=" navbar-collapse collapse" id="mainNav">
           <ul class="navbar-nav">
-            <li><a class="nav-item nav-link" href="#about">ABOUT</a></li>
-            <li><a class="nav-item nav-link" href="#skills">SKILLS</a></li>
-            <li><a class="nav-item nav-link" href="#work">WORK</a></li>
-            <li><a class="nav-item nav-link" href="#contact">CONTACT</a></li>
+            <li><a class="nav-item nav-link active" href="#">ABOUT</a></li>
+            <li><a class="nav-item nav-link" href="#">SKILLS</a></li>
+            <li><a class="nav-item nav-link" href="#">CONTACT</a></li>
           </ul>
         </div>
       </div>
+
     </nav>
-    <!--HEADER-->
+
+    <!--ABOUT-->
+    <!--header-->
+    <div class="jumbotron jumbotron-home bg-inverse text-white" id="about">
+      <div class="d-flex justify-content-center">
+        <div id="headline">
+<h1 class="display-2">Hi, I'm Miguel!</h1>
+    <p class="text-center text-muted">Aspiring <span class="text-white">Web Developer</span> &amp; <span class="text-white">Systems Administrator</span></p>
+        </div>
+      </div>
+        <p>PICTURE HERE</p>
+    </div>
+
+
+    <h3 class="display-4 text-center py-5 my-3">Skills</h3>
+    <nav class="nav justify-content-center nav-pills flex-column flex-md-row">
+      <a class="nav-link active" href="#NA" data-toggle="tab">Network Administration</a>
+      <a class="nav-link" href="#SA" data-toggle="tab">System Admininstration</a>
+      <a class="nav-link" href="#WD" data-toggle="tab">Web Development</a>
+    </nav>
+    <div class="bg-success text-white py-5 my">
+      <div class="container">
+        <h1 class="display-1">About me</h1>
+        <p class="lead text-right">I've worked with TORO.IO</p>
+      </div>
+    </div>
     <!--SKILLS-->
     <!--WORK-->
     <!--CONTACT-->
